@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="transform: skewy(20deg) translatey(150px);">
+        <canvas id="canvas" width="400" height="300" depth="20"></canvas>
+        <script type="text/javascript">
+            var c = document.getElementById('canvas');
+            var ctx = c.getContext('2d');
+            var myColors =['#FFFF00','#CCFF00','#99FF00','#00FF66','#00FF99','#00FFCC','#FF0000','#FF6600','#FFCC00'];
+            var myData = [68,20,34,12,5,6,15.5,9.5,10];
+            var radius = 100;
+            var lastPosition = 0, total = 0;
+            ctx.outlineThickness = 10
+            function createPie() {
+                for(var j=0; j++) {
+                    myData[j] = document.getElementById
+                }
+            }
+            for(var i in myData) {total += myData[i];}
+            for(i=0;i< myData.length;i++)
+            {
+                ctx.fillStyle = myColors[i];
+                ctx.beginPath();
+                ctx.moveTo(200,150);
+                ctx.arc(200,150,radius,lastPosition,lastPosition+(Math.PI*2*(myData[i]/total)),false);
+                ctx.fill();
+                lastPosition += Math.PI*2*(myData[i]/total);
+            }
+        </script>
+        </div>
+    </body>
+</html>
