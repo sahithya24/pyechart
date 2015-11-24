@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script src="chart.js"></script>
+<body>
+    <div style="transform: skewy(0deg) translatey(150px);" id="chart">
+    </div>
+</body>
+<script>
+    var pye = new pyechart();
+    pye.setStage("chart");
+    pye.setData([98,12,27,5]);
+    pye.setColor(true);
+    pye.drawChart();
+</script>
+</html>
