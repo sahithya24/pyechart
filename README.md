@@ -1,2 +1,2 @@
 # Pyechart
-#### Simple Lightwight pie chart, based on javascript
+#### Simple Lightweight pie chart, based on javascript
